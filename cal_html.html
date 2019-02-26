@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="cal_css.css">
+      <title>Calculator</title>
+  </head>
+
+  <body>
+    <div id="name">
+        <h1>Sam's Buggy Calculator</h1>
+    </div>
+    <div id="calculator">
+        <center>
+            <table>
+                <tr>
+                    <th class="display" colspan="4"></th>
+                </tr>
+                <tr class="click">
+                    <td><button onclick="addNumber(1)" class="button">1</button></th>
+                    <td><button onclick="addNumber(2)" class="button">2</button></th>
+                    <td><button onclick="addNumber(3)" class="button">3</button></th>
+                    <td><button onclick="addOperator('+')" class="button">+</button></th>
+                </tr>
+                <tr>
+                    <td><button onclick="addNumber(4)" class="button">4</button></th>
+                    <td><button onclick="addNumber(5)" class="button">5</button></th>
+                    <td><button onclick="addNumber(6)" class="button">6</button></th>
+                    <td><button onclick="addOperator('-')" class="button">-</button></th>
+                </tr>
+                <tr>
+                    <td><button onclick="addNumber(7)" class="button">7</button></th>
+                    <td><button onclick="addNumber(8)" class="button">8</button></th>
+                    <td><button onclick="addNumber(9)" class="button">9</button></th>
+                    <td><button onclick="addOperator('*')" class="button">*</button></th>
+                </tr>
+                <tr>
+                    <td><button onclick="clearDisplay('c')" class="button">clr</button></td>
+                    <td><button onclick="addNumber(0)" class="button">0</button></th>
+                    <td><button onclick="performOperation()" class="button">=</button></th> 
+                    <td><button onclick="addOperator('/')" class="button">/</button></th>
+                </tr>
+            </table>
+        </center>
+    </div>
+  </body>
+<script src="cal_js.js"></script>
+</html>
